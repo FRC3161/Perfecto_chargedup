@@ -28,7 +28,6 @@ const Operate = () => {
 		}
 		setWebcamUrl(streams[0].replace("mjpg:", ""));
 	}, [isRobotConnected]);
-
 	return (
 		<OperateWrapper>
 			<Cameras>
@@ -48,7 +47,9 @@ const Operate = () => {
 					<h3>Cameras</h3>
 				</CamerasTop>
 				<CamerasInner>
-					<Camera>Limelight</Camera>
+					<Camera url="http://photonvision.local:1181/stream.mjpg">
+						Limelight
+					</Camera>
 					<Camera url={webcamUrl}>Webcam</Camera>
 				</CamerasInner>
 			</Cameras>

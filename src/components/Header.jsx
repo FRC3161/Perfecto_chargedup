@@ -50,7 +50,12 @@ const Header = ({ themeToggler, setRobotConnected, theme }) => {
 			<Left>
 				<Name>Perfecto</Name>
 				<Links>
-					<LinkWrapper active={location.pathname === "/"}>
+					<LinkWrapper
+						active={location.pathname === "/"}
+						onClick={() => {
+							window.location.href = window.location.href;
+						}}
+					>
 						<Link to="/">Operate</Link>
 					</LinkWrapper>
 					<LinkWrapper active={location.pathname === "/swerve"}>
