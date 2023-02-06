@@ -20,9 +20,8 @@ const ErrorMessage = ({ children }) => {
 				<Left>
 					<Top>
 						<img src={errorSvg} />
-						<p>An error has occured</p>
+						<p>{children}</p>
 					</Top>
-					<p>{children}</p>
 				</Left>
 				<Right>
 					<img src={closeSvg} onClick={handleClick} />

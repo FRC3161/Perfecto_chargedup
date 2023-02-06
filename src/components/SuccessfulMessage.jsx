@@ -25,9 +25,8 @@ const SuccessfulMessage = ({ children }) => {
 				<Left>
 					<Top>
 						<img src={done} />
-						<p>Done</p>
+						<p>{children}</p>
 					</Top>
-					{children}
 				</Left>
 				<Right>
 					<img src={close} onClick={handleClick} />
