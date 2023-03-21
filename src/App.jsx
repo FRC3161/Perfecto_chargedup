@@ -32,7 +32,6 @@ const App = () => {
 		}
 	};
 
-	console.log(messages);
 	const [theme, setTheme] = useState(
 		localStorage.getItem("theme") || "light"
 	);

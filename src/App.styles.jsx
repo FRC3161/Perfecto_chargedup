@@ -14,7 +14,7 @@ export const Messages = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 300px;
-	position: absolute;
+	position: fixed;
 	bottom: 30px;
 	right: 30px;
 	gap: 10px;

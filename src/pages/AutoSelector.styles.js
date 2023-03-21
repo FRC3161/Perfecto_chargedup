@@ -5,7 +5,6 @@ export const AutoSelectorWrapper = styled.div`
 	height: calc(100vh - 140px);
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
 	gap: 20px;
 `;

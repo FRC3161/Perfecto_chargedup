@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Operate from "./pages/Operate";
 import AutoSelector from "./pages/AutoSelector";
+import Arm from "./pages/Arm";
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
 			{
 				path: "/auto",
 				element: <AutoSelector />,
+			},
+			{
+				path: "/arm",
+				element: <Arm />,
 			},
 		],
 	},
